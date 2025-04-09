@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+   
+
+</head>
+<body>
+    <div class="container">
+        <h1>AI Study Assistant</h1>
+        <div class="file-upload">
+        <input type="file" id="fileInput" accept=".txt,.pdf,.doc,.docx" />
+        <label for="fileInput">Choose File</label>
+        <span id="fileName">No file selected</span>
+    </div>
+        <br>
+        <button id="loadFileBtn">Load File</button>
+        <button id="analyzeTextBtn"> Analyze Text</button>
+        <button id="generateQuizBtn"> Generate Quiz</button>
+        <button id="downloadPDFBtn">Save as PDF</button>
+        
+        <div class="output">
+            <h3> Key Points:</h3>
+            <p id="keyPoints">No key points yet.</p>
+            <h3> Summarized Text:</h3>
+            <p id="summary">No summary available.</p>
+            <h3> Quiz:</h3>
+            <ul id="quiz"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

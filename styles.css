@@ -1,0 +1,122 @@
+ body {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;
+    height: 92vh;
+    /* width:92vh; */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background:linear-gradient(to right, rgb(47,49,36), rgb(141, 187, 198));;
+    padding: 20px;
+}
+
+.container {
+    background:linear-gradient(to right, rgb(81, 81, 75), rgb(136, 191, 198));
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300vh;
+    margin: auto;
+    font-weight: bold;
+    text-align: left;
+    animation: pulseGlow 1s  ease-in-out 15;
+     
+}
+
+@keyframes pulseGlow {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(0, 150, 255, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 150, 255, 0.3);
+    }
+}
+
+
+
+
+
+button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #363b40;
+    color: rgb(245, 241, 241);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1d2732;
+}
+
+.output {
+    /* display:flex;
+    justify-content:center;
+    align-items: center;
+    text-align: left; */
+    margin-top: 20px;
+    gap:15px;
+}
+
+h1 {
+    font-size: 35px;
+    color:rgb(52, 35, 35);
+    margin-left: 90px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    color: #382b2b;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p, ul {
+    background:linear-gradient(to right, rgb(47,49,36), rgb(141, 187, 198));
+    color:#e1b691;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+} 
+
+
+.file-upload {
+    position: relative;
+    display: inline-block;
+}
+
+.file-upload input[type="file"] {
+    display: none; /* Hide the default file input */
+}
+
+.file-upload label {
+    display: inline-block;
+    background-color: #363b40; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.file-upload label:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Selected file name style */
+#fileName {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
