@@ -15,3 +15,7 @@ Python, NLP
 Helps students reduce study time by converting lengthy documents into concise notes.
 
 
+<img width="862" height="909" alt="image" src="https://github.com/user-attachments/assets/744698b0-2986-4141-84ec-550aa25b5b7a" />
+
+
+
